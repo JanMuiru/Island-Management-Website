@@ -1,0 +1,179 @@
+<div class="contacts-content">
+    <h1 class="h1-contacts">GET IN TOUCH</h1>
+    <div class="contacts-icon">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+       
+        </span>
+        
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+        </span>
+        
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>
+        </span>
+        
+
+    </div>
+    <div class="h3-contacts">
+        <h3>Location</h3>
+        <h3>Phone</h3>
+        <h3>Email</h3>
+    </div>
+    <div class="p-contacts">
+        <p>Kitengela Town</p>
+        <p>0700-000-00</p>
+        <p>islandmanltd@yahoo.com</p>
+    </div>
+
+</div>
+
+<div>
+    <div class="container">
+        <form method="POST" class="form-register" style="color:#231F20">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+              <br>
+              <button type="button" class="btn btn-primary">Primary</button>
+        </form>
+    </div>
+    
+</div>
+<form>
+    <div class="mb-3">
+      <label for="Name" class="form-label">Name</label>
+      <input type="Name" class="form-control" id="Name" aria-describedby="NameHelp">  
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Comments</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+            {{ form.name.label() }}
+            {{ form.name(class="form-control") }}
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control") }}
+
+            {{ form.message.label() }}
+            {{ form.message(class="form-control", placeholder="Leave a comment here") }}
+            {{ form.submit(class="="btn btn-primary"") }}
+
+            
+            <div class="form-content">
+              <h3>Message Us</h3>  
+              <form class="form-it">
+                <div class="mb-3">
+                  <label for="Name" class="form-label">Name</label>
+                  <input type="Name" class="form-control" id="Name" aria-describedby="NameHelp">  
+                  <label for="Email Address" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  <label for="Message">Message</label>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                 
+                </div>
+                <button type="Submit" class="btn btn-primary">Submit</button>
+              </form>
+              <h4>MPESA Services</h4>
+              <h4>MPESA Agent Lines</h4>
+              <h4>Banking Services</h4>
+              <h4>Register and Replace lines</h4>
+
+
+                        {{ form.name.label() }}
+                        {{ form.name(class="form-control") }}
+
+                        {{ form.email_address.label() }}
+                        {{ form.email_address(class="form-control") }}
+
+                        {{ form.phone_number.label() }}
+                        {{ form.phone_number(class="form-control") }}
+
+                        {{ form.county.label() }}
+                        {{ form.county(class="form-control") }}
+
+                        {{ form.town.label() }}
+                        {{ form.town(class="form-control") }}
+
+                        {{ form.enquiry.label() }}
+                        {{ form.enquiry(class="form-control", placeholder="enquire here...", id="com-sec") }}
+                      
+                        <form class="form-it-enquire">
+                          <div class="mb-3">
+                            <label for="Name" class="form-label">Full Name</label>
+                            <input type="Name" class="form-control" id="Name" aria-describedby="NameHelp">  
+                            <label for="Email Address" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="Phone Number" class="form-label">Phone Number</label>
+                            <input type="phone" class="form-control" id="Phone" aria-describedby="PhoneHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your number with anyone else.</div>
+                            <label for="County" class="form-label">County</label>
+                            <input type="County" class="form-control" id="County" aria-describedby="CountyHelp">
+                            <label for="Town" class="form-label">Town</label>
+                            <input type="Town" class="form-control" id="Town" aria-describedby="TownHelp">
+                            <label for="Enquiry">Enquiry</label>
+                            <textarea class="form-control" placeholder="Enquire here..." id="com-sec"></textarea>
+                           
+                          </div>
+                          <button type="Submit" class="btn btn-success">Submit</button>
+                      </form>    
+
+                      <div class="answer-content">
+                        <p class="answer-content-1">
+                            A) STANDARD REQUIREMENTS  
+                            MINIMUM NUMBER OF AGENT OUTLETS
+                            • Prospective agent must be registered as a LIMITED company or equivalent with at least 3 outlets ready to
+                            offer M‐PESA under the company names. The company MUST have traded for a minimum period of 6
+                            months.
+                            • Proposed outlets shall be audited prior to commencement of business.  
+                            • Only applications for outlets in opportunity areas will be considered.  
+                            i) MINIMUM M‐PESA CASH INVESTMENT
+                            An agent will expected to invest the following amounts:
+                            (a) Kshs 100,000 per outlet for float.
+                            (b) Kshs 100,000 for SIMEX (SIM replacement cards).
+                            (c) Kshs 100,000 per outlet for additional outlets for float.
+                            Successful agents will be required to deposit this money within one month of signing the contract, failure
+                            to which the contract shall be revoked.
+                            ii) STAFF
+                            The agent should preferably employ competent staff with minimum of KCSE to handle the service.
+                            iii) TECHNICAL REQUIREMENTS
+                            The agent head office must have the following equipment to ensure that operations are conducted in a
+                            professional manner:
+                            a) 1 Computer and ancillary equipment approved by Safaricom. At least 512 MB with Windows 2000.
+                            b) At least 2 people to handle head office operations on a day to day basis (may not be on a full time basis).
+                            c) Internet connectivity with connection speeds acceptable to Safaricom.
+                            d) 1 printer for printing downloaded reports.
+                            e) Any other items/equipment necessary to conduct the business like desks chairs, stationery, pens and a
+                            pay point.
+                            f) A telephone line either landline or mobile for contact.
+                            g) An official E‐mail contact.
+                            h) An ETR Machine.
+                            iv) PREMISES AND THEIR MAINTAINANCE
+                            An M‐PESA agent must conform to Safaricom branding and merchandising standards. The minimum
+                            branding requirements will be supplied to you on commencement of business.
+                        </p>
+    
+                    </div>
